@@ -267,7 +267,7 @@ export interface TinySliderSettings extends CommonOptions {
      * Callback to be run on initialization.
      * @defaultValue false
      */
-    onInit?: () => void | false;
+    onInit?: (i: TinySliderInfo) => void | false;
     /**
      * Save browser capability variables to localStorage and without detecting them everytime the slider runs if set to true.
      * @defaultValue true
