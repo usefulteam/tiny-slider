@@ -270,19 +270,23 @@ export interface TinySliderSettings extends CommonOptions {
 }
 
 export interface TinySliderInfo {
-	event: Event | {};
 	cloneCount: number;
 	container: HTMLElement;
 	controlsContainer?: boolean;
+	displayIndex: number;
+	event: Event | {};
 	hasControls: boolean;
 	index: number;
 	indexCached: number;
+	isOn: boolean;
 	items: number;
 	navContainer?: HTMLElement;
 	navCurrentIndex?: number;
 	navCurrentIndexCached?: number;
 	navItems?: HTMLCollection;
 	nextButton?: HTMLElement;
+	pages: number;
+	pagesCached: number;
 	prevButton?: HTMLElement;
 	slideBy: number;
 	slideCount: number;
